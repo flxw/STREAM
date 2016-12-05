@@ -12,7 +12,11 @@ else
   CFLAGS = -O2 -fopenmp -mcmodel=medium -DSTREAM_ARRAY_SIZE=$(STREAM_ARRAY_SIZE)
 endif
 
-FFLAGS = -O2 -fopenmp
+ifndef STREAM_ARRAY_SIZE
+  FFLAGS = -O2 -fopenmp
+else
+  FFLAGS = -O2 -fopenmp -DSTREAM_ARRAY_SIZE=$(STREAM_ARRAY_SIZE)
+endif
 
 all: stream_f.exe stream_c.exe
 
