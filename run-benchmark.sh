@@ -1,6 +1,6 @@
 #!/bin/sh
 
-CONFIGURATIONS=(250 200 150 100 50)
+source ./benchmark-configuration.sh
 EXECUTABLE="./stream_c.exe"
 
 for config in "${CONFIGURATIONS[@]}"; do

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-AMOUNTS=(50 100 150 200 250)
+source ./benchmark-configuration.sh
 
 for amount in "${AMOUNTS[@]}"; do
   cgm create   memory limitedrss/limit$amount
