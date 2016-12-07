@@ -1,6 +1,6 @@
 #!/bin/sh
 
-CONFIGURATIONS=(200 150 100 50)
+CONFIGURATIONS=(250 200 150 100 50)
 EXECUTABLE="./stream_c.exe"
 
 for config in "${CONFIGURATIONS[@]}"; do
